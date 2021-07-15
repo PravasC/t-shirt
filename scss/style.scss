@@ -21,6 +21,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
+    margin-bottom: -100px;
 }
 //First___NavBar
 #first__nav{
@@ -299,6 +300,46 @@ header{
                 word-spacing: 5px;
             }
             
+        }
+    }
+}
+
+//QUICH SEE PRODUCT
+
+#quick__see__product{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    & #quick__see__product__container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: blue;
+
+        & #upper_section{
+            width: 100%;
+            height: 55%;
+            background-color: $liteass-color;
+            text-align: center;
+            & .section__container{
+                width: 100%;
+                height: 80%;
+                background-color: $liteass-color;
+
+                & img{
+                    width: 50px;
+                    margin: 20px 0;
+                }
+
+                & h1{
+                    color: $dark-color;
+                    margin-bottom: 50px;
+                }
+            }
+            & #slider__product{
+                margin-bottom: 50px;
+            }
         }
     }
 }

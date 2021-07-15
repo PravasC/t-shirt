@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
+    <!--========================================= Swiper Js Cdn ========================================-->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!--========================================= Swiper Js css ========================================-->
+
+    <link rel="stylesheet" href="scss/slider.css">
+
     <!--========================================= Fav ICON ========================================-->
     <script src="js/index.js">
     </script>
@@ -77,13 +85,42 @@
             <!--======================================== HERO SECTION ========================================-->
 
             <section id="hero__section">
-                <div id="hero__section__container" >
+                <div id="hero__section__container">
                     <h1>Get Exclusive T-Shirt</h1>
                     <h2>Where Design Come to Sell</h2>
                     <button>Login / Sign Up</button>
                 </div>
             </section>
         </header>
+
+        <!--======================================== HERO SECTION ========================================-->
+
+        <section id="quick__see__product">
+            <div id="quick__see__product__container" class="container">
+                <div id="upper_section">
+                    <div class="section__container">
+                        <img src="image/icons/shuttle.png" alt="shuttle img">
+                        <h1>You Can Buy any type of t-shirt<br>with the design with your own choice</h1>
+                        <div id="slider__product" class="swiper-container mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="image/product/product1.png"></div>
+                              <div class="swiper-slide"><img src="image/product/product2.png"></div>
+                              <div class="swiper-slide"><img src="image/product/product3.png"></div>
+                              <div class="swiper-slide"><img src="image/product/product4.png"></div>
+                              <div class="swiper-slide"><img src="image/product/product5.png"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <h1>Buy t-shirt and other custome apparer</h1>
+                    </div>
+                </div>
+                <div id="lower_section">
+
+                </div>
+            </div>
+        </section>
     </div>
 
     <script type="text/javascript">
@@ -91,12 +128,31 @@
         var navMenuIcon = document.getElementsByClassName("menu-toggole");
         var navMenuClose = document.getElementsByClassName("close-btn");
 
-        const toggolefunOpen = () =>{
+        const toggolefunOpen = () => {
             navMenu.classList.toggle("show");
         }
-        const toggolefunClose = () =>{
+        const toggolefunClose = () => {
             navMenu.classList.toggle("show");
         }
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
 </body>
 
