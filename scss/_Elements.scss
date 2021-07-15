@@ -1,27 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 //ALL COLORS
-
+$lite-color: #fff;
+$liteass-color: #f2f2f2;
+$ass-color: #bcbcbc;
+$darkass-color: #757575;
+$dark-color: #303030;
+$pink-color: #ff3b83;
+$lite-pink: #ffc3d9;
+$yallow-color: #ffdd59;
+$lite-yallow: #ffeda9;
 //ALL TYPHOGRAPHY SIZES
-
+h1{
+    font-size: 3.2rem;
+}
+h2{
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+h5{
+    font-size: 1.4rem;
+}
+h6{
+    font-size: 1.2rem;
+}
 //DISPLAY FLEX
 .displayFlex{
     display: flex;
 }
-//DISPLAY FLEX AND JUSTIFY CONTENT CENTER
-.displayJustifyCenter{
-    display: flex;
-    justify-content: center;
+
+.container{
+    max-width: 1300px;
 }
-//DISPLAY FLEX AND JUSTIFY SPACE - AROUND
-.displayJustifyAround{
-    display: flex;
-    justify-content: space-around;
-}
-//DISPLAY FLEX AND JUSTIFY SPACE - Between
-.displayJustifyBetween{
-    display: flex;
-    justify-content: space-between;
-}
+// //DISPLAY FLEX AND JUSTIFY CONTENT CENTER
+// .displayJustifyCenter{
+//     display: flex;
+//     justify-content: center;
+// }
+// //DISPLAY FLEX AND JUSTIFY SPACE - AROUND
+// .displayJustifyAround{
+//     display: flex;
+//     justify-content: space-around;
+// }
+// //DISPLAY FLEX AND JUSTIFY SPACE - Between
+// .displayJustifyBetween{
+//     display: flex;
+//     justify-content: space-between;
+// }
 
 //DISPLAY FLEX AND JUSTIFY SPACE - Between
+
+
+// // Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (max-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (max-width: 992px) { ... }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (max-width: 1200px) { ... }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (max-width: 1400px) { ... }

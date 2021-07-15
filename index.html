@@ -1,39 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========================================= Custom CSS ========================================-->
+
+    <link rel="stylesheet" href="scss/style.css">
+
+    <!--========================================= Font Awasome ========================================-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!--========================================= Fav ICON ========================================-->
+    <script src="js/index.js">
+    </script>
     <title>T-SHIRT-DESIGN</title>
 </head>
+
 <body>
 
-<!--========================================= FULL WRAPPER ========================================-->
+    <!--========================================= FULL WRAPPER ========================================-->
 
     <div id="wrapper">
 
-<!--======================================== HEADER SECTION =========================================-->
+        <!--======================================== HEADER SECTION =========================================-->
 
         <header>
 
-<!--======================================== FRIST NAV SECTION ========================================-->
+            <!--======================================== FRIST NAV SECTION ========================================-->
 
             <section id="first__nav">
-
+                <div id="frist__nav__container" class="container">
+                    <p>
+                        <span> <i class="fas fa-phone-alt"></i> Call Us + 8801998027752</span><span class="hideass"> |
+                        </span>
+                        <span> <i class="fas fa-undo"></i> 30 Days Return Policy </span><span class="hideass"> | </span>
+                        <span> <i class="fas fa-percentage"></i> Buy in bulk save-Up
+                            to 80% </span>
+                    </p>
+                </div>
             </section>
 
-<!--======================================== SECOUND NAV SECTION ========================================-->
+            <!--======================================== SECOUND NAV SECTION ========================================-->
 
             <section id="secound__nav">
-
+                <div id="secound__nav__container" class="container">
+                    <div class="nav-branding">
+                        <img src="image/logo.png" alt="OUR BRAND LOGO">
+                    </div>
+                    <div class="menu-toggole" onclick="toggolefunOpen()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="nav-bar" id="nav-bar">
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="nav-link"><a href="#">Selling Option</a></li>
+                                <li class="nav-link"><a href="#">Products</a></li>
+                                <li class="nav-link"><a href="#">Our Works</a></li>
+                                <li class="nav-link"><a href="#">Customers</a></li>
+                                <li><button>
+                                        Buy
+                                    </button></li>
+                            </ul>
+                            <div class="close-btn" onclick="toggolefunClose()">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-<!--======================================== HERO SECTION ========================================-->
+            <!--======================================== HERO SECTION ========================================-->
 
             <section id="hero__section">
-
+                <div id="hero__section__container" >
+                    <h1>Get Exclusive T-Shirt</h1>
+                    <h2>Where Design Come to Sell</h2>
+                    <button>Login / Sign Up</button>
+                </div>
             </section>
         </header>
     </div>
+
+    <script type="text/javascript">
+        var navMenu = document.getElementById("nav-bar");
+        var navMenuIcon = document.getElementsByClassName("menu-toggole");
+        var navMenuClose = document.getElementsByClassName("close-btn");
+
+        const toggolefunOpen = () =>{
+            navMenu.classList.toggle("show");
+        }
+        const toggolefunClose = () =>{
+            navMenu.classList.toggle("show");
+        }
+    </script>
 </body>
+
 </html>
